@@ -6,6 +6,9 @@ import numpy as np
 import pickle
 import dill
 
+from sklearn.metrics import r2_score
+from sklearn.model_selection import GridSearchCV
+
 
 def read_yaml_file(file_path: str) -> dict:
     try:
